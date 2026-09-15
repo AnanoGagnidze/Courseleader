@@ -47,16 +47,79 @@
     <br>
     <hr>
     <br>
-    <h1>Online Shopping Discount Calculator</h1>
+    <h1>Tax Bracket Calculator</h1>
     <form>
-        <label for="order">Enter the total amount of an order: </label>
-        <input type="number" id="order" name="order">
-        <button type="button" value="submit" onclick="applyDiscount()">Submit</button> 
-        <p id="discount"></p>
+        <label for="income">Enter the total amount of an order: </label>
+        <input type="number" id="income" name="income">
+        <button type="button" value="submit" onclick="calculateTax()">Submit</button> 
+        <p id="tax"></p>
     </form>
     <br>
     <hr>
     <br>
+    <h1>Store Open Hours Checker</h1>
+    <form>
+        <label for="hour">Enter the time: </label>
+        <input type="number" id="hour" name="hour">
+        <button type="button" value="submit" onclick="isStoreOpen()">Submit</button> 
+        <p id="store"></p>  
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h1>Car Loan Approval</h1>
+    <form>
+        <div class="carLoan">
+        <label for="creditScore">Enter your credit score: </label>
+        <input type="number" id="creditScore" name="creditScore">
+        <br>
+        <br>         
+        <label for="annualIncome">Enter your annual income: </label>
+        <input type="number" id="annualIncome" name="annualIncome">
+        <button type="button" value="submit" onclick="approveCarLoan()">Submit</button>
+        </div> 
+        <p id="loan"></p>  
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h1>Internet Speed Check</h1>
+    <form>
+        <label for="speed">Enter the time: </label>
+        <input type="number" id="speed" name="speed">
+        <button type="button" value="submit" onclick="checkInternetSpeed()">Submit</button> 
+        <p id="result"></p>  
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h1>Movie Ticket Price Calculator</h1>
+    <form>
+        <label for="ageInput">Enter the age: </label>
+        <input type="number" id="ageInput" name="ageInput">
+        <br>
+        <br>
+        <label for="weekend"><input type="checkbox" name="weekend" id="weekend"> is it weekend?</label>
+        <br>
+        <br>
+        <button type="button" value="submit" onclick="calculateTicketPrice()">Submit</button> 
+        <p id="ticketPrice"></p>  
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h1>Fitness Level Checker</h1>
+    <form>
+        <label for="pushUps">Enter the number of push-ups </label>
+        <input type="number" id="pushUps" name="pushUps">
+        <button type="button" value="submit" onclick="checkFitnessLevel()">Submit</button> 
+        <p id="check"></p>  
+    </form>
+    <br>
+    <hr>
+    <br>
+
+
     <script src="script.js"></script>
     
 </body>
