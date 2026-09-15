@@ -54,8 +54,6 @@ function applyDiscount() {
             discount = order * 0.1;
         } else if (order > 200) {
             discount = order * 0.15;
-        } else {
-            discount = 0;
         }
 
         document.getElementById("discount").innerHTML = "Your Discount is " + discount + "$";
