@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ეს არის preloader-ის სტილი, რომელიც გამოიყენება ვებსაიტზე გვერდის ჩატვირთვის დროს. */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2783AD; /* Change to your background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.preloader-logo {
+  width: 120px;
+  height: auto;
+  animation: logoPulse 2s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* მთავრდება preloader-ის სტილი */
+
+/* იწყება ნავიგაციის სტილი */
+
+nav {
+    background-color: #2783AD;
+    padding: 10px 80px; /* აქ, არ დაგავიყდეს რომ პირველი მანიშნებელია მაღლა-დაბლა 10px, ხოლო მეორე მანიშნებელი არის მარცხნივ-მარჯვნივ 80px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo {
+  width: 60px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px; /* ცვლის თვითონ მენიუში შემავალი ელემენტების დაშორებებს */
+}
+
+nav ul li {
+  text-align: center;
+}
+
+#login {
+  background-color: #fff;
+  color: #2783AD;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#login:hover {
+  background-color: #2783AD;
+  color: #fff;
+}
+
+#signup {
+  background-color: #FFABB8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#signup:hover {
+  background-color: #fff;
+  color: #FFABB8;
+}
