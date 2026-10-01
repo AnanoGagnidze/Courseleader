@@ -10,23 +10,71 @@
     <div id="preloader">
         <img src="assets/logo.png" alt="Loading Logo" class="preloader-logo">
     </div>
-
+    
     <nav>
 
         <img src="assets/logo.png" alt="Logo" class="navLogo">
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="petList.html">Pet List</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
 
         </ul>
 
         <div>
-            <button id="login" onclick="window.location.href='login.html'">Login</button>
-            <button id="signup" onclick="window.location.href='signup.html'">Sign Up</button>
+            <button id="login" class="btn btn-secondary" onclick="showLoginPage()">Login</button>
+            <button id="signup" class="btn btn-primary" onclick="showSignUpPage()">Sign Up</button>
         </div>
 
     </nav>
+
+    <div id="content–container">
+        <div class="button-container">
+            <h1>Welcome to Paws</h1>
+            <p>Your one-stop destination for all things pets!</p>
+            <button id="explore" class="btn btn-primary" onclick="window.location.href='petList.html'">Explore Pets</button>
+            <button id="learnMore" class="btn btn-secondary" onclick="window.location.href='about.html'">Learn More</button>
+        </div>
+
+        <div>
+            <img src="assets/content 1.png" alt="Content Image 1" class="content-image">
+        </div>
+
+    </div>
+
+
+        <div id="loginPage" class="login-page">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" onclick="showSignUpPage()">Sign Up</a></p>
+            </div>    
+        </div>
+
+        <div id="signupPage" class="signup-page">
+            <div class="signup-container">
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="#" onclick="showLoginPage()">Login</a></p>
+            </div>
+        </div>
+ 
+
+        <!-- < <div id="background-container">
+            <img src="assets/vector 1.png" alt="Vector Image 1" class="vector-image">
+            <img src="assets/vector 2.png" alt="Vector Image 2" class="vector-image2">
+         -->
+
 
     <script src="script.js"></script>
 </body>
